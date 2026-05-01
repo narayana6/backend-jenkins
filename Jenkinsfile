@@ -109,9 +109,7 @@ pipeline {
             }
         } 
          stage('Deploy'){
-        
-    
-            steps{
+               steps{
                 script{
                     def params = [
                         string(name: 'appVersion', value: "${appVersion}")
